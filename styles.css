@@ -165,17 +165,12 @@ body::before {
     overflow: hidden;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+.hero-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
     position: relative;
     z-index: 1;
-}
-
-.hero-left {
-    padding-right: 2rem;
 }
 
 .hero-badge {
@@ -186,7 +181,7 @@ body::before {
     background: rgba(124, 58, 237, 0.1);
     border: 1px solid rgba(124, 58, 237, 0.3);
     border-radius: 50px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--primary);
@@ -224,6 +219,7 @@ body::before {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2.5rem;
+    align-items: center;
 }
 
 .feature-item {
@@ -850,10 +846,10 @@ body::before {
 /* Logo Badge */
 .brand-logo {
     display: block;
-    max-width: 450px;
+    max-width: 600px;
     width: 100%;
     height: auto;
-    margin-bottom: 2rem;
+    margin: 0 auto 3rem;
 }
 
 .hero-vector {
@@ -1235,38 +1231,14 @@ body::before {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
-    .hero-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .hero-left {
-        order: 2;
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .hero-right {
-        order: 1;
-        padding-top: 0;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        width: 100%;
-        text-align: center;
+    .hero-content-wrapper {
+        max-width: 100%;
+        padding: 0 1rem;
     }
 
     .brand-logo {
-        max-width: 400px;
-        margin: 0 auto 1.5rem;
-        display: block;
-    }
-
-    .hero-vector {
-        max-width: 300px;
-        margin: 0 auto;
-        display: block;
+        max-width: 500px;
+        margin: 0 auto 2rem;
     }
 
     .hero-title {
@@ -1337,24 +1309,14 @@ body::before {
         min-height: auto;
     }
 
-    .hero-grid {
-        gap: 2rem;
-        display: flex;
-        flex-direction: column;
+    .hero-content-wrapper {
+        max-width: 100%;
+        padding: 0 1rem;
     }
 
-    .hero-left {
-        order: 2;
-    }
-
-    .hero-right {
-        order: 1;
-        padding-top: 0;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        width: 100%;
-        text-align: center;
+    .brand-logo {
+        max-width: 450px;
+        margin: 0 auto 2rem;
     }
 
     .hero-title {
@@ -1364,18 +1326,6 @@ body::before {
 
     .hero-description {
         font-size: 1rem;
-    }
-
-    .brand-logo {
-        max-width: 380px;
-        margin: 0 auto 1.5rem;
-        display: block;
-    }
-
-    .hero-vector {
-        max-width: 280px;
-        margin: 0 auto;
-        display: block;
     }
 
     .gradient-orb {
@@ -1486,35 +1436,14 @@ body::before {
         font-size: 0.9375rem;
     }
 
-    .hero-grid {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero-left {
-        order: 2;
-    }
-
-    .hero-right {
-        order: 1;
-        padding-top: 0;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1.5rem;
-        width: 100%;
-        text-align: center;
+    .hero-content-wrapper {
+        max-width: 100%;
+        padding: 0 1rem;
     }
 
     .brand-logo {
-        max-width: 350px;
-        margin: 0 auto 1.5rem;
-        display: block;
-    }
-
-    .hero-vector {
-        max-width: 240px;
-        margin: 0 auto;
-        display: block;
+        max-width: 400px;
+        margin: 0 auto 2rem;
     }
 
     .section-header {
@@ -1729,11 +1658,7 @@ body::before {
     }
 
     .brand-logo {
-        max-width: 320px;
-    }
-
-    .hero-vector {
-        max-width: 220px;
+        max-width: 350px;
     }
 
     .gradient-orb {
