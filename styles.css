@@ -1236,13 +1236,37 @@ body::before {
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 3rem;
     }
 
     .hero-left {
+        order: 2;
         padding-right: 0;
         text-align: center;
+    }
+
+    .hero-right {
+        order: 1;
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .brand-logo {
+        max-width: 400px;
+        margin: 0 auto 1.5rem;
+        display: block;
+    }
+
+    .hero-vector {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
     }
 
     .hero-title {
@@ -1315,6 +1339,22 @@ body::before {
 
     .hero-grid {
         gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-left {
+        order: 2;
+    }
+
+    .hero-right {
+        order: 1;
+        padding-top: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
     }
 
     .hero-title {
@@ -1326,20 +1366,16 @@ body::before {
         font-size: 1rem;
     }
 
-    .hero-right {
-        padding-top: 2rem;
-        align-items: center;
-        justify-content: center;
-    }
-
     .brand-logo {
-        max-width: 250px;
+        max-width: 380px;
         margin: 0 auto 1.5rem;
+        display: block;
     }
 
     .hero-vector {
         max-width: 280px;
         margin: 0 auto;
+        display: block;
     }
 
     .gradient-orb {
@@ -1450,19 +1486,35 @@ body::before {
         font-size: 0.9375rem;
     }
 
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-left {
+        order: 2;
+    }
+
     .hero-right {
-        padding-top: 2rem;
+        order: 1;
+        padding-top: 0;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        text-align: center;
     }
 
     .brand-logo {
-        max-width: 200px;
-        margin-bottom: 1.5rem;
+        max-width: 350px;
+        margin: 0 auto 1.5rem;
+        display: block;
     }
 
     .hero-vector {
-        max-width: 220px;
-        margin-top: 1rem;
+        max-width: 240px;
+        margin: 0 auto;
+        display: block;
     }
 
     .section-header {
@@ -1677,11 +1729,11 @@ body::before {
     }
 
     .brand-logo {
-        max-width: 180px;
+        max-width: 320px;
     }
 
     .hero-vector {
-        max-width: 200px;
+        max-width: 220px;
     }
 
     .gradient-orb {
